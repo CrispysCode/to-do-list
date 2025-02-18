@@ -5,3 +5,45 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+
+/* Main */
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    
+    background-color: rgb(189, 189, 189);
+}
+
+/*Left Side */
+
+.left-container { 
+    border: 1px solid black;
+    background: white;
+    padding: 20px;
+    box-shadow:  2px 2px 10px rgba(0,0,0,0.2);
+    width: 50%;
+    margin: 25px;
+}
+.notepad {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    
+}
+
+.notepad h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/*Right Side */
+
+.right-container {
+    width: 50%;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+    align-content: flex-start;
+}

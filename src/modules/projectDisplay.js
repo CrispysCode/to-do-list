@@ -9,7 +9,14 @@ export function projectDisplay(projectData) {
         <p>Due: ${projectData.dueDate}</p>
         <p>Priority:${projectData.priority}</p>
         <p>Notes: ${projectData.notes}</p>
-        <p>Checked is complete: ${projectData.status ? 'Completed' : 'Pending'}</p>
+        <div class="status-container">
+          <label>
+            <input type="checkbox" 
+            ${projectData.status ? "checked" : ""}>
+              Complete
+          </label>
+        </div>
         `;
+        
         return projectBox;
     }

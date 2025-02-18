@@ -70,13 +70,15 @@ export function formGenerator() {
 
     //Status
     const status = document.createElement("input");
+    status.classList.add("block-form");
     status.id = "project-status";
     const statusLabel = document.createElement("label");
+    statusLabel.classList.add("block-form");
     statusLabel.htmlFor = "project-status";
     statusLabel.textContent = "Completed:";
     status.type = "checkbox";
-    form.appendChild(statusLabel);
-    form.appendChild(status);
+    // form.appendChild(statusLabel);
+    // form.appendChild(status);
 
     //Finally the button
     const submitBtn = document.createElement("button");

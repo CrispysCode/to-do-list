@@ -1,6 +1,6 @@
 import "./styles.css";
 import { greeting } from "./modules/startModule.js";
-import { formGenerator } from "./modules/formGenerator.js";
+import { formGenerator, loadProjects } from "./modules/formGenerator.js";
 //import anyImage from "./image.png";
 //const image = document.createElement("img");
 // image.src = anyImage;
@@ -9,3 +9,4 @@ import { formGenerator } from "./modules/formGenerator.js";
 console.log(greeting);
 
 formGenerator();
+loadProjects();

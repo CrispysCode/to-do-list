@@ -96,12 +96,24 @@ export function formGenerator() {
             dueDate: date.value,
             priority: priority.value,
             notes: notes.value,
-            status: status.checked
+            status: false
         };
+        const incompleteProjects = JSON.parse(localStorage.getItem("projects")) || [];
+        incompleteProjects.push(projectData);
+        localStorage.setItem("projects", JSON.stringify(incompleteProjects));
 
         const projectBox = projectDisplay(projectData);
         rightContainer.appendChild(projectBox);
         form.reset();
 
-    })
+    });
+}
+
+export function loadProjects() {
+    const rightContainer = document.querySelector(".right-container");
+    const projects = JSON.parse(localStorage.getItem("projects")) || [];
+projects.forEach(projectData => {
+    const projectBox = projectDisplay(projectData);
+    rightContainer.appendChild(projectBox);
+});
 }

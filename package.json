@@ -4,7 +4,10 @@
   "description": "To install webpack locally: (1) npm init -y npm install webpack webpack-cli --save-dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "CrispysCode <pr0ject0dinx@gmail.com>",
